@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Leksjon 2</title>
+    <meta nam="author" content="author of page if needed"/>
+    <meta name="description" content="description shown in google search"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="url"/>
+    <meta property="og:description" content="description"/>
+    <meta property="og:title" content="title"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<!-------- BODY-------->
+<body>
+    <!--står fast på hvordan jeg skal få "hiof" til venstre og "user user" til høyre-->
+    <header id="header">
+        <nav id="navbar">
+            <h1 id="company">HIOF</h1>
+            <p id="user">User User</p>
+        </nav>
+    </header>
+
+<!-------- MAIN-------->
+    <main>
+        <section id="formSection">
+            <form action="/form.php">
+            <!-- Hva er forskjellen på linjen over, og denne? <form action="POST"> -->
+                <fieldset>
+                        <label for="Title">Title(label)</label>
+                        <input placeholder="Enter title" type="text" name="Title" required="no">
+                </fieldset>
+                <fieldset>
+                    <label for="Content">Content(label)</label>
+                    <textarea placeholder="Enter content" id="content" cols="150" rows="10"></textarea>
+                    <input id="btn" type="submit" value="Add">
+                </fieldset>
+            </form>
+        </section>
+
+        <h2>My Todos</h2>
+        <section class="flexContainer">
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+                <article class="flexElement">
+                    <h2>Todo title</h2>
+                    <p>i'm baby sriracha hot chicken mixtape pabst organic air</p>
+                    <button id="btn">Complete</button>
+                </article>
+        </section>
+    </main>
+
+</body>
+
+
