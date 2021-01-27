@@ -26,14 +26,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    border: 3px black;
 }
 .flexElement {
     box-shadow: 3px 3px 10px #56D4C2;
     margin: 20px;
     padding: 20px;
     max-width: 250px;
-    border: solid;
     align-items: center;
 }
 #btn {
@@ -46,12 +44,26 @@ main {
 /*MediaQuerry*/
 @media only screen and (max-width: 800px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: 
-            "header "
-            "main";
+            "header header header "
+            ". main .";
         font-family: sans-serif;
         font-size: 16px;
     }
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flexElement {
+        box-shadow: 3px 3px 10px #56D4C2;
+        margin: 20px;
+        padding: 20px;
+        max-width: 80%;
+    }
+
 }
